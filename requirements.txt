@@ -1,0 +1,11 @@
+ipython
+networkx
+allennlp==0.9.0
+tabulate
+torch==1.2.0
+torchvision==0.4.0
+overrides==2.6.0
+
+demoji
+beautifulsoup4
+lxml

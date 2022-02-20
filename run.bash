@@ -1,0 +1,4 @@
+BERT_VERSION='/share/model/transformers/bert/uncased_L-12_H-768_A-12' SPAN_SIZE=1 bash scripts/run_exp.bash -d 0 -c config/e3c_bert_base.jsonnet -m model/e3c_bert_kbp2017_en -i data/ai_e3c_kbp2017_en  -k 5
+BERT_VERSION='/share/model/transformers/bert/uncased_L-12_H-768_A-12' SPAN_SIZE=1 bash scripts/run_exp.bash -d 0 -c config/e3c_bert_base.jsonnet -m model/e3c_bert_kbp2016_en -i data/ai_e3c_kbp2016_en  -k 5
+BERT_VERSION='/share/model/transformers/bert/chinese_L-12_H-768_A-12' SPAN_SIZE=3 bash scripts/run_exp.bash -d 0 -c config/e3c_bert_base.jsonnet -m model/e3c_bert_kbp2017_zh -i data/ai_e3c_kbp2017_zh  -k 5 -o '{model:{bce_loss_weight:10}}'
+BERT_VERSION='beto_cased' SPAN_SIZE=1 bash scripts/run_exp.bash -d 0 -c config/e3c_bert_base.jsonnet -m model/e3c_bert_kbp2017_es -i data/ai_e3c_kbp2017_es -k 5

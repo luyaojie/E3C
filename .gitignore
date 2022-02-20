@@ -1,0 +1,14 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+/data
+*/data
+/model
+/beto_cased
+/tmp
+
+*/corenlp/*
+
+/*.log
