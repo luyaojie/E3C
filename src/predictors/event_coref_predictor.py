@@ -11,8 +11,6 @@ from allennlp.predictors.predictor import Predictor
 from overrides import overrides
 from spacy.tokens import Doc
 
-from src.data.utils import process_document
-
 
 @Predictor.register("event-coref")
 class EventCorefPredictor(Predictor):

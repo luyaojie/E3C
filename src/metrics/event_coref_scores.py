@@ -143,7 +143,6 @@ def split_cluster_with_different_label(clusters):
 class EventCorefScores(Metric):
     def __init__(self, mapping_type=False) -> None:
         self.scorers = [Scorer(m) for m in (Scorer.muc, Scorer.b_cubed, Scorer.ceafe)]
-        self.scorers += [BLANCScorer()]
         self._mapping_type = mapping_type
 
     @overrides
